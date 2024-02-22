@@ -88,5 +88,5 @@ public class Homework04 {
 //        System.out.print(ch3);
 //        System.out.print(ch4);
 //        System.out.println(ch5);
-////        System.out.printf("%d", 1);
+////        System.out.printf("%d", 1); printf вывод форматируемой информации на консоль. %d шаблон для целого числа
 //        System.out.println("" + ch1 + ch2 + ch3 + ch4 + ch5);

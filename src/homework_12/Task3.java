@@ -1,36 +1,40 @@
 package homework_12;
 
-import java.util.Arrays;
+/*
+на вход принимает массив целых чисел и число - длину нового массива.
+Метод должен создать и распечатать массив заданной в параметрах длинны.
+В начало массива должны быть скопированы элементы из входящего массива:
 
-public class Task3{
+{0, 1, 2, 3, 4 , 5, 6} -> copyOfArray(array, 3) -> вывод на печать {0, 1, 2}
+ */
+public class Task3 {
+    public static void main(String[] args) {
+        int[] testArr = {0, 1, 2, 3, 4, 5, 6};
 
-//  Написать свой метод copyOfArray, дублирующий функционал метода Arrays.copyOf()
-//
-//на вход принимает массив целых чисел и число - длину нового массива.
-// Метод должен создать и распечатать массив заданной в параметрах длинны.
-// В начало массива должны быть скопированы элементы из входящего массива:
-//
-//{0, 1, 2, 3, 4 , 5, 6} -> copyOfArray(array, 3) -> вывод на печать {0, 1, 2}
+        copyOfArray(testArr, 3);
 
 
-    public static void copyOfArray(int[] inputArray, int newLength) {
-        if (newLength <= 0) {
-            System.out.println("Wrong input");
-            return;
+    }
+
+    public static void copyOfArray(int[] ints, int newLength) {
+        int[] result = new int[newLength];
+
+
+        for (int i = 0; i < result.length && i < ints.length; i++) {
+            result[i] = ints[i];
         }
 
-        int[] newArray = Arrays.copyOf(inputArray, newLength);
-        System.out.println( "Copied: " + Arrays.toString(newArray));
+        printArray(result);
+
+
     }
 
-    public static void main(String[] args) {
-        int[] array = {5, 3, -2, 7, 9, 3, 8};
-        copyOfArray(array, 5);
+    public static void printArray(int[] ints) {
+        System.out.print("[");
+        for (int i = 0; i < ints.length; i++) {
+            System.out.print(ints[i] + ((i < ints.length - 1) ? "; " : "]\n"));
+
+        }
     }
 }
-
-
-
-
-
 

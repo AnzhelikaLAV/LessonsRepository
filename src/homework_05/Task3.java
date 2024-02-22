@@ -23,8 +23,10 @@ public class Task3 {
 
     int middleIndex = str1.length() / 2;
 
-// System.out.println(str2.charAt(middleIndex));
-    String substring = str1.substring(middleIndex - 1, middleIndex + 1);
+// System.out.println(str2.charAt(middleIndex)); charAt возвращает символ строки по индексу
+    String substring = str1.substring(middleIndex - 1, middleIndex + 1);/* substring возвращает подстроку начиная с
+    определенного индекса до конца или до определенного индекса */
+
 
     System.out.println("substring: " + substring);
 

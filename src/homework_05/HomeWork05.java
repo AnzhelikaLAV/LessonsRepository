@@ -65,6 +65,8 @@ public class HomeWork05 {
 
                     // Способ 1:
                     String result1 = String.join(" ", str1, str2, str3, str4,str5);
+                    // join Соединяет строки с учетом разделителя
+
 
                     // Способ 2:
                     String result2 = str1.concat(" ")
@@ -88,6 +90,7 @@ public class HomeWork05 {
                     String result3 = str1 + " " + str2 + " " + str3 + " " + str4 + " " + str5;
 
                     result3 = result3.replace("powerful", "super");
+                    // replace заменяет в одной строке одну подстроку на другую
 
                     System.out.println("Замена: " + result3);
 
@@ -98,12 +101,13 @@ public class HomeWork05 {
             }
 
             // vp String concatStr = String.join(" ", str, str1, str2, str3, str4);
+            // join Соединяет строки с учетом разделителя
 //
 //        concatStr = str.concat(" ")
 //                .concat(str1).concat(" ")
 //                .concat(str2).concat(" ")
 //                .concat(str3).concat(" ")
-//                .concat(str4);
+//                .concat(str4); // concat обьединяет строки
 //
 //        System.out.println(concatStr);
 //        System.out.println("Длина строки: " + concatStr.length()) ;
