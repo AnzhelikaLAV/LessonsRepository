@@ -1,3 +1,5 @@
+
+
 package util;
 
 public interface MyList<T> {
@@ -60,7 +62,7 @@ public interface MyList<T> {
      *
      * @return Array - представление элементов в виде массива
      */
-    Object[] toArray();
+    T[] toArray();
 
 
     /**

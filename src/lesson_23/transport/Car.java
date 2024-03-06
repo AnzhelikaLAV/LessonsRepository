@@ -12,6 +12,10 @@ public class Car extends Vehicle{
         this.setEngine(engine);
     }
 
+    public Car(String alfa, int i, int i1) {
+
+    }
+
     @Override
     public  String toString() {
         //Todo если двигателя нет - поменять вывод
